@@ -1,55 +1,58 @@
 <template>
   <div>
+    <header class="p-3 flex items-center justify-between absolute">
+      <nuxt-link to="/">
+        <inlineSvg class="logo w-40" src="logo" />
+      </nuxt-link>
+    </header>
     <nuxt />
+    <footer
+      class="p-2 w-full flex items-center justify-between border-t border-gray text-black"
+    >
+      <div>
+        <small>&copy; Copyright 2020, HOOPOE.MEDIA</small>
+      </div>
+      <div class="flex w-1/2 justify-end content-center">
+        <a
+          href="https://github.com/talalus"
+          title="Talal Suhail on Github"
+          target="_blank"
+          rel="nofollow"
+        >
+          <inlineSvg class="w-12 p-2" src="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/talalus/"
+          target="_blank"
+          rel="nofollow"
+        >
+          <inlineSvg class="w-12 p-2" src="linkedin" />
+        </a>
+        <a
+          href="https://twitter.com/HoopoeMediaApps"
+          title="@HoopoeMediaApps"
+          target="_blank"
+          rel="nofollow"
+        >
+          <inlineSvg class="w-12 p-2" src="twitter" />
+        </a>
+        <a
+          href="https://www.facebook.com/HoopoeMediaApps/"
+          title="@HoopoeMediaApps"
+          target="_blank"
+          rel="nofollow"
+        >
+          <inlineSvg class="w-12 p-2" src="facebook" />
+        </a>
+      </div>
+    </footer>
   </div>
 </template>
-
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import InlineSvg from '~/components/InlineSvg'
+export default {
+  components: {
+    InlineSvg
+  }
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>
