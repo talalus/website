@@ -13,9 +13,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/http": "^0.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "dotenv": "^8.2.0",
     "lazysizes": "^5.2.0",
-    "nuxt": "^2.0.0"
+    "mailgun.js": "^2.0.1",
+    "nuxt": "^2.0.0",
+    "vue-phone-number-input": "^1.1.6",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "^0.4.0",

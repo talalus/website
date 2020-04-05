@@ -32,7 +32,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#f60', height: '3px', throttle: 0 },
   /*
    ** Global CSS
    */
@@ -57,7 +57,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
+  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images', '@nuxt/http'],
 
   optimizedImages: {
     optimizeImages: true
