@@ -103,7 +103,6 @@
               type="text"
               placeholder="Phone number"
               autocomplete="tel"
-              autofocus
             />
             <div v-if="$v.phone.$error" class="mt-1">
               <div v-if="!$v.phone.required" class="text-xs text-red">
