@@ -1,10 +1,29 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/now-builder",
-      "config": {}
+  "functions": {
+    "api/contact.js": {
+      "memory": 1024
     }
-  ]
+  },
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.js"
+    },
+    { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
+    {
+      "src": "/sw.js",
+      "dest": "/_nuxt/static/sw.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "env": {
+    "MG_API_KEY": "@mg_api_key",
+    "MG_DOMAIN": "@mg_domain",
+    "CONTACT_EMAIL": "@contact_email"
+  }
 }

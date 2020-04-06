@@ -1,5 +1,5 @@
 <template>
-  <div class="main-content pl-1 pr-1 pt-32">
+  <div>
     <section
       class="h-screen container w-full flex items-center mx-auto -mt-32"
       style="min-height: 650px"
@@ -140,6 +140,14 @@
           </p>
         </div>
       </div>
+    </section>
+    <section class="py-16 text-center my-10">
+      <nuxt-link
+        to="contact"
+        class="uppercase bg-orange text-white font-bold rounded px-8 py-3"
+      >
+        Contact Me
+      </nuxt-link>
     </section>
   </div>
 </template>
