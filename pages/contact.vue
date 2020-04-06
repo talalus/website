@@ -181,7 +181,6 @@
 </template>
 
 <script>
-import 'vue-phone-number-input/dist/vue-phone-number-input.css'
 import { validationMixin } from 'vuelidate'
 import { required, email } from 'vuelidate/lib/validators'
 import InlineSvg from '~/components/InlineSvg'
@@ -228,14 +227,13 @@ export default {
         this.submitStatus = 'ERROR'
       } else {
         this.submitStatus = 'PENDING'
-        debugger
-        const res = await this.$http.post('api/contact', {
+        const res = await this.$http.$post('api/contact', {
           email: this.email,
           name: this.name,
-          phone: this.phoneNumber,
+          phone: this.phone.formattedNumber,
           message: this.message
         })
-        if (res.statusCode === '200') {
+        if (res.statusCode === 200) {
           this.submitStatus = 'OK'
           this.$v.$reset()
           this.email = null

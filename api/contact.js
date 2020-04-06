@@ -1,4 +1,5 @@
 require('dotenv').config()
+const StringDecoder = require('string_decoder').StringDecoder
 const { MG_API_KEY, MG_DOMAIN, CONTACT_EMAIL } = process.env
 const mailgun = require('mailgun.js')
 const mg = mailgun.client({
@@ -12,27 +13,47 @@ async function sendEmail({ name, phone, email, message }) {
     to: CONTACT_EMAIL,
     subject: `${name} - ${phone}`,
     text: `${message}`,
-    html: `${message}`
+    html: `<div style="white-space: pre-wrap; word-break: break-word">${message}</div>`
   })
   return res
 }
 
-module.export = async (req, res) => {
-  if (req.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method Not Allowed' }
-  }
-
-  try {
-    const data = JSON.parse(req.body)
-    await sendEmail(data)
-    res.json({
-      statusCode: 200,
-      body: 'Email sent!'
+export default {
+  path: '/api/contact',
+  handler(req, res) {
+    res.writeHead(200, {
+      'Content-Type': 'application/json'
     })
-  } catch (err) {
-    res.json({
-      statusCode: 500,
-      body: err.message || err
+
+    if (req.method !== 'POST') {
+      res.end(JSON.stringify({ statusCode: 405, body: 'Method Not Allowed' }))
+    }
+
+    const decoder = new StringDecoder('utf-8')
+    let payload = ''
+    req.on('data', (data) => {
+      payload += decoder.write(data)
+    })
+
+    req.on('end', async () => {
+      payload = JSON.parse(payload)
+
+      try {
+        await sendEmail(payload)
+        res.end(
+          JSON.stringify({
+            statusCode: 200,
+            body: 'Email sent!'
+          })
+        )
+      } catch (err) {
+        res.end(
+          JSON.stringify({
+            statusCode: 500,
+            body: err.message || err
+          })
+        )
+      }
     })
   }
 }

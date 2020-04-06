@@ -36,7 +36,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['vue-phone-number-input/dist/vue-phone-number-input.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -62,6 +62,8 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
+
+  serverMiddleware: ['~/api/contact'],
   /*
    ** Build configuration
    */
