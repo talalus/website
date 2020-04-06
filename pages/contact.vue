@@ -86,34 +86,28 @@
               </div>
             </div>
           </div>
-          <div :class="['my-4', phone && !phone.isValid && 'error']">
+          <div :class="['mb-4', $v.phone.$error && 'error']">
             <label
-              :class="['block mb-1', phone && !phone.isValid && 'text-red']"
+              :class="['block mb-1', $v.phone.$error && 'text-red']"
               for="phone"
             >
               Phone
             </label>
-            <client-only>
-              <VuePhoneNumberInput
-                id="phone"
-                v-model="phoneNumber"
-                @update="setPhone"
-                size="lg"
-                valid-color="#41B883"
-                error-color="#f04124"
-                color="#212121"
-                :no-validator-state="true"
-              />
-            </client-only>
-            <div v-if="phone" class="mt-1">
-              <div v-if="!phoneNumber" class="text-xs text-red">
+            <input
+              id="phone"
+              :class="[
+                'border radius rounded border-gray p-2 w-full',
+                $v.phone.$error && 'border-red'
+              ]"
+              v-model.trim="$v.phone.$model"
+              type="text"
+              placeholder="Phone number"
+              autocomplete="tel"
+              autofocus
+            />
+            <div v-if="$v.phone.$error" class="mt-1">
+              <div v-if="!$v.phone.required" class="text-xs text-red">
                 Field is required.
-              </div>
-              <div
-                v-if="phoneNumber && !phone.isValid"
-                class="text-xs text-red"
-              >
-                Please enter a valid phone number.
               </div>
             </div>
           </div>
@@ -187,7 +181,6 @@ import InlineSvg from '~/components/InlineSvg'
 
 export default {
   components: {
-    VuePhoneNumberInput: () => import('vue-phone-number-input'),
     InlineSvg
   },
   mixins: [validationMixin],
@@ -198,7 +191,6 @@ export default {
       email: null,
       name: null,
       message: null,
-      phoneNumber: null,
       phone: null
     }
   },
@@ -208,6 +200,9 @@ export default {
       email
     },
     name: {
+      required
+    },
+    phone: {
       required
     },
     message: {
@@ -222,15 +217,14 @@ export default {
       this.$v.$touch()
       this.errorMessage = null
       this.submitStatus = null
-      if (!this.phoneNumber) this.phone = { isValid: false }
-      if (this.$v.$invalid || !this.phoneNumber || !this.phone.isValid) {
+      if (this.$v.$invalid) {
         this.submitStatus = 'ERROR'
       } else {
         this.submitStatus = 'PENDING'
         const res = await this.$http.$post(`${window.origin}/api/contact`, {
           email: this.email,
           name: this.name,
-          phone: this.phone.formattedNumber,
+          phone: this.phone,
           message: this.message
         })
         if (res.statusCode === 200) {
@@ -239,7 +233,6 @@ export default {
           this.email = null
           this.name = null
           this.message = null
-          this.phoneNumber = null
           this.phone = null
         } else {
           this.submitStatus = 'ERROR'
@@ -257,15 +250,6 @@ export default {
   animation-fill-mode: forwards;
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
-}
-
-.input-tel.lg .input-tel__input {
-  box-shadow: none !important;
-}
-
-.error .country-selector__input,
-.error .input-tel__input {
-  border-color: #f04124;
 }
 
 @keyframes shakeError {

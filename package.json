@@ -20,7 +20,6 @@
     "lazysizes": "^5.2.0",
     "mailgun.js": "^2.0.1",
     "nuxt": "^2.0.0",
-    "vue-phone-number-input": "^1.1.6",
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {

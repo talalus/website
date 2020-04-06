@@ -38,7 +38,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['vue-phone-number-input/dist/vue-phone-number-input.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */

@@ -24,7 +24,7 @@
           target="_blank"
           rel="nofollow"
         >
-          <inlineSvg class="w-12 p-2" src="github" />
+          <inlineSvg class="w-12 p-2 fill-current" src="github" />
         </a>
         <a
           href="https://www.linkedin.com/in/talalus/"
