@@ -5,6 +5,7 @@
   "author": "talalus",
   "private": true,
   "scripts": {
+    "now-build": "yarn generate",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

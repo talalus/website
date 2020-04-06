@@ -227,7 +227,7 @@ export default {
         this.submitStatus = 'ERROR'
       } else {
         this.submitStatus = 'PENDING'
-        const res = await this.$http.$post('api/contact', {
+        const res = await this.$http.$post(`${window.origin}/api/contact`, {
           email: this.email,
           name: this.name,
           phone: this.phone.formattedNumber,

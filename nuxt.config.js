@@ -1,3 +1,5 @@
+const isServerlessEnvironment = !!process.env.NOW_REGION
+
 export default {
   mode: 'universal',
   /*
@@ -63,7 +65,12 @@ export default {
     optimizeImages: true
   },
 
-  serverMiddleware: ['~/api/contact'],
+  serverMiddleware: isServerlessEnvironment ? [] : ['~/api/contact'],
+
+  generate: {
+    dir: 'public'
+  },
+
   /*
    ** Build configuration
    */
