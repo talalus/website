@@ -14,6 +14,12 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'magento certified front end developer, magento frontend developer, magento pwa developer, vue storefront developer, magento pwa developer, magento theme developer'
       }
     ],
     htmlAttrs: {
