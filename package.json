@@ -1,8 +1,8 @@
 {
-  "name": "hoopoe",
+  "name": "HOOPOE.MEDIA",
   "version": "1.0.0",
-  "description": "hoopoe.media",
-  "author": "talalus",
+  "description": "HOOPOE is the independent consultancy of Talal Suhail, My focus is Front End development for eCommerce.",
+  "author": "Talal Suhail",
   "private": true,
   "scripts": {
     "now-build": "yarn generate",

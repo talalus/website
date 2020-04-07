@@ -15,7 +15,7 @@
           <h1
             class="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-none"
           >
-            eCommerce Front End Development Services
+            eCommerce Front End Development Service
           </h1>
         </div>
       </div>
@@ -135,8 +135,12 @@
       <div class="mt-auto md:m-0 md:w-6/12">
         <div class="mb-16 md:mb-0 max-w-md">
           <p class="text-xl mb-4 max-w-sm leading-tight">
-            HOOPOE is the independent consultancy of Talal Suhail. My focus is
-            Front End development for eCommerce.
+            HOOPOE is the independent consultancy of Talal Suhail.<br />
+            My focus is Front End development for eCommerce to deliver
+            responsive and fast web application. <br />
+            With over 10 years of experience in programming and more than 6
+            years of experience in developing and outsourcing Magento projects
+            I'd love to get in touch to talk about your E-commerce project.
           </p>
         </div>
       </div>
