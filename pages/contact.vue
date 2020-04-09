@@ -11,7 +11,7 @@
           itemscope=""
           itemtype="http://schema.org/PostalAddress"
         >
-          <span itemprop="name">Hoopo.media</span>
+          <span itemprop="name">Talal Suhail</span>
           <br />
           <span itemprop="streetAddress">Ubay Ben Thabet</span>
           ,

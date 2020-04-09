@@ -5,19 +5,19 @@
         <inlineSvg class="logo w-40" src="logo" />
       </nuxt-link>
       <nuxt-link to="/contact" class="uppercase">
-        Contact
+        Say Hi!
       </nuxt-link>
     </header>
     <div class="main-content pl-1 pr-1 pt-32">
       <nuxt />
     </div>
     <footer
-      class="p-2 w-full flex items-center justify-between border-t border-gray text-black"
+      class="p-2 w-full flex flex-col-reverse md:flex-row items-center justify-between border-t border-gray text-dark-gray"
     >
       <div>
         <small class="text-xs">&copy; Copyright 2020, HOOPOE.MEDIA</small>
       </div>
-      <div class="flex w-1/2 justify-end content-center">
+      <div class="flex justify-end content-center">
         <a
           href="https://github.com/talalus"
           title="Talal Suhail on Github"
@@ -48,6 +48,14 @@
           rel="nofollow"
         >
           <inlineSvg class="w-12 p-2" src="facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/hoopoemediaapps/"
+          title="@HoopoeMediaApps"
+          target="_blank"
+          rel="nofollow"
+        >
+          <inlineSvg class="w-12 p-2" src="instagram" />
         </a>
       </div>
     </footer>
