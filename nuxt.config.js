@@ -74,7 +74,7 @@ export default {
 
   facebook: {
     track: 'PageView',
-    pixelId: process.env.FACEBOOK_PIXEL_ID || '',
+    pixelId: process.env.FACEBOOK_PIXEL_ID || '663960964176142',
     disabled: false
   },
 
