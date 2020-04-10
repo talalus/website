@@ -24,6 +24,7 @@
   "env": {
     "MG_API_KEY": "@mg_api_key",
     "MG_DOMAIN": "@mg_domain",
-    "CONTACT_EMAIL": "@contact_email"
+    "CONTACT_EMAIL": "@contact_email",
+    "FACEBOOK_PIXEL_ID": "@facebook_pixel_id"
   }
 }
