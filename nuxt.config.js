@@ -65,7 +65,18 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images', '@nuxt/http'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@bazzite/nuxt-optimized-images',
+    '@nuxt/http',
+    'nuxt-facebook-pixel-module'
+  ],
+
+  facebook: {
+    track: 'PageView',
+    pixelId: process.env.FACEBOOK_PIXEL_ID,
+    disabled: false
+  },
 
   optimizedImages: {
     optimizeImages: true
