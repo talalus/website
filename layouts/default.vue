@@ -20,7 +20,7 @@
       <div class="flex justify-end content-center">
         <a
           href="https://github.com/hoopoemedia"
-          title="@hoopoemedia"
+          title="@HoopoeMedia"
           target="_blank"
           rel="nofollow"
         >
