@@ -19,8 +19,8 @@
       </div>
       <div class="flex justify-end content-center">
         <a
-          href="https://github.com/talalus"
-          title="Talal Suhail on Github"
+          href="https://github.com/hoopoemedia"
+          title="@hoopoemedia"
           target="_blank"
           rel="nofollow"
         >
