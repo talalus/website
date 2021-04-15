@@ -19,7 +19,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'magento certified front end developer, magento frontend developer, magento pwa developer, vue storefront developer, magento pwa developer, magento theme developer'
+          'talal suhail, magento certified front end developer, magento frontend developer, magento pwa developer, vuestorefront developer, magento pwa developer, magento theme developer'
       }
     ],
     htmlAttrs: {
