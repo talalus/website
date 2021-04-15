@@ -111,7 +111,7 @@
             Magento certified front end developer
           </h2>
           <a
-            href="https://u.magento.com/certification/directory/dev/id/1813515/"
+            href="https://www.credly.com/badges/7709fda9-6932-4406-8aa6-1632dddf582e/public_url"
             target="_blank"
             rel="nofollow"
             class="py-2 text-orange underline uppercase"
