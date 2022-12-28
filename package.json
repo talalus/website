@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxt/http": "^0.4.0",
+    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "dotenv": "^8.2.0",
     "lazysizes": "^5.2.0",
@@ -27,7 +28,6 @@
     "@bazzite/nuxt-optimized-images": "^0.4.0",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
