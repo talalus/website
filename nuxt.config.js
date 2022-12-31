@@ -6,7 +6,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'HOOPOE.MEDIA | Responsive eCommerce web development',
+    title: 'hoopoe commerce | Responsive eCommerce web development',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'talal suhail, magento certified front end developer, magento frontend developer, magento pwa developer, vuestorefront developer, magento pwa developer, magento theme developer'
+          'talal suhail, magento certified front end developer, magento agency, vue storefront agency, ecommerce agency, commerce agency, magento headless agency, magento pwa agency, headless ecommerce agency, spa ecommerce agency'
       }
     ],
     htmlAttrs: {
