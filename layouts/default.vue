@@ -27,7 +27,7 @@
           <inlineSvg class="w-12 p-2 fill-current" src="github" />
         </a>
         <a
-          href="https://www.linkedin.com/in/hoopoecommerce/"
+          href="https://www.linkedin.com/company/hoopoecommerce/"
           target="_blank"
           rel="nofollow"
         >
