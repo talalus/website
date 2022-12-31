@@ -15,26 +15,26 @@
       class="p-2 w-full flex flex-col-reverse md:flex-row items-center justify-between border-t border-gray text-dark-gray"
     >
       <div>
-        <small class="text-xs">&copy; Copyright 2023, HOOPOE.MEDIA</small>
+        <small class="text-xs">&copy; Copyright 2023, hoopoecommerce.com</small>
       </div>
       <div class="flex justify-end content-center">
         <a
-          href="https://github.com/hoopoemedia"
-          title="@HoopoeMedia"
+          href="https://github.com/hoopoecommerce"
+          title="@hoopoecommerce"
           target="_blank"
           rel="nofollow"
         >
           <inlineSvg class="w-12 p-2 fill-current" src="github" />
         </a>
         <a
-          href="https://www.linkedin.com/in/talalus/"
+          href="https://www.linkedin.com/in/hoopoecommerce/"
           target="_blank"
           rel="nofollow"
         >
           <inlineSvg class="w-12 p-2" src="linkedin" />
         </a>
         <a
-          href="https://twitter.com/HoopoeMediaApps"
+          href="https://twitter.com/hoopoecommerce"
           title="@HoopoeMediaApps"
           target="_blank"
           rel="nofollow"
@@ -42,7 +42,7 @@
           <inlineSvg class="w-12 p-2" src="twitter" />
         </a>
         <a
-          href="https://www.facebook.com/HoopoeMediaApps/"
+          href="https://www.facebook.com/hoopoecommerce/"
           title="@HoopoeMediaApps"
           target="_blank"
           rel="nofollow"
@@ -50,7 +50,7 @@
           <inlineSvg class="w-12 p-2" src="facebook" />
         </a>
         <a
-          href="https://www.instagram.com/hoopoemediaapps/"
+          href="https://www.instagram.com/hoopoecommerce/"
           title="@HoopoeMediaApps"
           target="_blank"
           rel="nofollow"
