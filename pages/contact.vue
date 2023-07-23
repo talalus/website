@@ -11,24 +11,15 @@
           itemscope=""
           itemtype="http://schema.org/PostalAddress"
         >
-          <span itemprop="name">Talal Suhail</span>
-          <br />
-          <span itemprop="streetAddress">Ubay Ben Thabet</span>
-          ,
-          <span itemprop="addressLocality">Tla'a Al Ali</span>
-          ,
-          <span itemprop="addressRegion">Amman</span>
-          ,
-          <span itemprop="addressCountry">Jordan</span>
-          <br />
+          <span itemprop="name">HOOPOE LTD</span>
           Phone:
           <a href="tel:+962791508340" itemprop="telephone">
             +962 79 150 8340
           </a>
           <br />
           Email:
-          <a href="mailto:talal@hoopoe.media" itemprop="email">
-            talal@hoopoe.media
+          <a href="mailto:talal@hoopoecommerce.com" itemprop="email">
+            talal@hoopoecommerce.com
           </a>
         </address>
       </div>
