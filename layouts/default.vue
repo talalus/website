@@ -15,7 +15,7 @@
       class="p-2 w-full flex flex-col-reverse md:flex-row items-center justify-between border-t border-gray text-dark-gray"
     >
       <div>
-        <small class="text-xs">&copy; Copyright 2023, Hoopoe LTD</small>
+        <small class="text-xs">&copy; Copyright 2023, HOOPOE LTD</small>
       </div>
       <div class="flex justify-end content-center">
         <a
