@@ -12,6 +12,7 @@
           itemtype="http://schema.org/PostalAddress"
         >
           <span itemprop="name">HOOPOE LTD</span>
+          <br />
           Phone:
           <a href="tel:+962791508340" itemprop="telephone">
             +962 79 150 8340
