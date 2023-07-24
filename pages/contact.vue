@@ -14,8 +14,8 @@
           <span itemprop="name">HOOPOE LTD</span>
           <br />
           Phone:
-          <a href="tel:+962791508340" itemprop="telephone">
-            +962 79 150 8340
+          <a href="tel:+1 (650) 319-8016" itemprop="telephone">
+           +1 (650) 319-8016
           </a>
           <br />
           Email:
